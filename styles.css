@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc);
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+.position {
+    font-size: 1.2em;
+    color: #b0b0b0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .menu {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    .section {
+        flex: 1;
+        margin: 20px;
+    }
+}
