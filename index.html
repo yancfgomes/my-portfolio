@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil - Yan Fernandes</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/accordion.css">
 </head>
 <body>
-    <div class="container">
         <header>
-            <img src="assets/images/profile-pic.png" alt="Yan Fernandes" class="profile-img">
-            <h1>Olá, eu sou o Yan Fernandes</h1>
+            <div class="container-img">
+                <img src="assets/images/profile-pic.png" alt="Yan Fernandes" class="profile-img">
+                <h1>Olá, eu sou o Yan Fernandes</h1>
+            </div>
             <div class="informacoes">
                 <div class="icons">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA50lEQVR4nOXUTQsBQRzH8W+IM3HkIi+Co4e8BDkpKYo7N7l4PHt/Tq6cKNJoa9S2zZpp53+RX/3amtmdT+3MLvxjKsAImOtrWXLxFLABnoAK9QGs9bx3VpHFVaRLX6AE3C3IDSj6IH0LoHR7PsjCEZn7IDNHZOqDdB2Rjg+SA64W4AJk8czBguwRSAE4xwDBeB6hNGKQOsJRhoomFYOI/Lc+J2wbg6z1fKJkgDZw/LLpKrT5wX0tIO0KDIGT40eoIg2eG9iAXcLFleE1GlMDXkLIC6iakIkQoHTHJqSpT5FUm66H4HfyBuguyjgblMuBAAAAAElFTkSuQmCC" alt="gender-neutral-user">
-
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABD0lEQVR4nOWUvWoCQRRGTykW/pXmCaKEVGIRkHR5ECFtyCsovkQkSaW2Qgz56XyEROuk8AkULQRxZOAWMlx177pWHrhMMd/M2b0zu3Bu3AJt4BeYyPgE1JLYPA+8AW5P9YFcXEEWGB8QOKkRkIkj6UUUOKmOVXANrJWN5nIec2XO568skpayyddW7/1ZfSuZpkUyUJ6yGGQulLf1lyQyw2DxdEduFuT8usi8Kq2oBJmqknmxSB6VDf6AO6Ag47+SebBIfP9Xxiu8knMy8WGUvBODG6OkRkw+IwoGHEEZWB4QLIFLjkT7+t1WNUiAlPyvnFI/Mp8IJWARCBZJtCnkPpDUORE9EXQ5IWngWcYzZANItLZXctxnaAAAAABJRU5ErkJggg==" alt="marker">
-
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABW0lEQVR4nOWVu0pDQRCGP200IHkEwVsnCtraiR4LC19B0ICNIEa8tL6DlzKaxkcQGwsLCx9A0ELiGxiNJkVWVkY4HGY3Z3I6/WE4nNnZ/ZmZf3bhv6EErAAVYF++ifgLYxKoAx+AU8z7L4GJfgn2gE7gcJexNlC1EpznPNxl7MySgStgu3l60FHq3jCQ+NKNx0jqmQ2fwCwwCDwYiC5CBCVFRVep9XUDyXtI3okS7AXwixljb5Y0kooS+AgMyPq1kWRTIzkKBG/I+paR5FAj2Y7Ud1pijoGu+N+AW2smy5ENT8Boqnf3wKr8zwN3eXtSBloRogawoG0EDjKxTWA4EPtz2cXq3BVZ+6yHUpm8ZuJqRDBnaGwTeFH8X8BYjGTNqCCn2A49cFKQ4JQceO7z8HaeDJDXzYnCbkQxiYihFZmhWq8epDEFLAakNyKK8gPr33g/aH4OgjL9m/gGo28hpAoiGlIAAAAASUVORK5CYII=" alt="whatsapp">
-
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBElEQVR4nO3Qr0tDYRTG8Y8/EIPFYRBWDBYRTBYtJrNdm2AxWvwXFoxGm9FmUVgWg8VisQgzGARBEAaiXnnlCPOyu7vNte3A856Xc55zvnAYxdDHNt6RDUAf2G296CK24p9y85+AZm5f2m85R97Aa5+AN2zGnp24TNr/8yTDFw7CsIrnHgEvWIv5fXxG/Q/kV7UwLuGxS8ATVmLuMNdrC0k6xjgWcF8CeIi7j+GoTb8QknSKSczjtsBzhyomcFLg6QhJOsc0ZnGV691gDlM467CjFJJUx0zoMmoXLbV6yXxXkKRrVOLu1ciVqGeDgiQ1sIf1yI0u53qCZH1qBNHzuUYxhPENBuoq8lVhEC8AAAAASUVORK5CYII=" alt="new-post">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div class="dados">
                     <p>Full stack jr</p>
@@ -29,39 +36,40 @@
                 </div>
             </div>
         </header>
-        <!-- <nav class="menu">
-            <ul>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#idiomas">Idiomas</a></li>
-                <li><a href="#educacao">Educação</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#experiencia">Experiência Profissional</a></li>
-            </ul>
-        </nav> -->
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <p>JavaScript, HTML, CSS, Python, SQL</p>
-        </section>
-        <section id="idiomas" class="section">
-            <h2>Idiomas</h2>
-            <p>Português (Nativo), Inglês (Profissional), Espanhol (Básico)</p>
-        </section>
-        <section id="educacao" class="section">
-            <h2>Educação</h2>
-            <p>Graduando em Análise e Desenvolvimento de Sistemas</p>
-        </section>
-        <section id="portfolio" class="section">
-            <h2>Portfólio</h2>
-            <p>Website pessoal, Projetos de Desenvolvimento Web</p>
-        </section>
-        <section id="experiencia" class="section">
-            <h2>Experiência Profissional</h2>
-            <p>2 anos de experiência como desenvolvedora front-end</p>
-        </section>
+
+        <main>
+            <section class="accordion">
+                <button class="accordion-header">
+                    <h2>Skills</h2>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+                <div class="accordion-body ">
+                    <p>JavaScript, HTML, CSS, Python, SQL</p>
+                </div>    
+            </section>
+
+
+            <!-- <section id="idiomas" class="section">
+                <h2>Idiomas</h2>
+                <p>Português (Nativo), Inglês (Profissional), Espanhol (Básico)</p>
+            </section>
+            <section id="educacao" class="section">
+                <h2>Educação</h2>
+                <p>Graduando em Análise e Desenvolvimento de Sistemas</p>
+            </section>
+            <section id="portfolio" class="section">
+                <h2>Portfólio</h2>
+                <p>Website pessoal, Projetos de Desenvolvimento Web</p>
+            </section>
+            <section id="experiencia" class="section">
+                <h2>Experiência Profissional</h2>
+                <p>2 anos de experiência como desenvolvedora front-end</p>
+            </section> -->
+        </main> 
+        
         <footer>
             <p>Yan Fernandes - Junior Full Stack Developer</p>
         </footer>
-    </div>
     <script src="script.js"></script>
 </body>
 </html>

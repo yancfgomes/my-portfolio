@@ -1,0 +1,34 @@
+.accordion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.accordion-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion-body{
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity .3s;
+}
+
+.accordion-body.active {
+    height: 100%;
+    opacity: 1;
+}
+
+/* Transição suave para rotação da seta */
+.arrow {
+    transition: transform 0.2s linear;
+}
+
+/* Aplique rotação de 180 graus quando o acordeão estiver ativo */
+.accordion:has(.active) .arrow {
+    transform: rotate(180deg);
+}
