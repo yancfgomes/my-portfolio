@@ -1,12 +1,24 @@
 .accordion{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(25, 123, 221);
+    border-radius: 0.8rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 .accordion-header{
+    color: white;
+    padding: 0.5rem 0.5rem 0 0.5rem;
     width: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,11 +29,13 @@
     height: 0;
     overflow: hidden;
     transition: opacity .3s;
+    border: none;
 }
 
 .accordion-body.active {
     height: 100%;
     opacity: 1;
+    padding: 5px 0px;
 }
 
 /* Transição suave para rotação da seta */
