@@ -2,8 +2,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-image: url(../assets/images/pexels-nickcollins-1293120.jpg);
-    background-size: cover;
+    /* background-image: url(../assets/images/pexels-nickcollins-1293120.jpg);
+    background-size: cover; */
+    background-color: rgb(250, 177, 104);
 }
 
 
