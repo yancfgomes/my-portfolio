@@ -1,0 +1,60 @@
+/* Contêiner principal que exibe as seções de habilidades */
+.container-main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid black;
+}
+
+/* Estilos para as seções de Hard Skills e Soft Skills */
+.hard-skills,
+.soft-skills {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid green;
+}
+
+/* Cabeçalhos das seções de habilidades */
+.hard-skills h3,
+.soft-skills h3 {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+/* Listas de habilidades */
+.list1,
+.list2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Itens das listas de habilidades */
+.list1 li,
+.list2 li {
+    padding: 0.8rem;
+    list-style-position: inside;
+}
+
+/* Especificação para .list1 (sem bullet) */
+.list1 li {
+    list-style-type: none; /* Remove os bullets da lista 1 */
+}
+
+/* Especificação para .list2 (com bullet visível) */
+.list2 {
+    list-style-type: disc; /* Adiciona bullet points visíveis na lista 2 */
+    padding-left: 1.5rem; /* Ajusta o espaço à esquerda para melhor alinhamento */
+}
+
+#language {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    
+}
